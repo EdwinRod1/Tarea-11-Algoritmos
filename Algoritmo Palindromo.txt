@@ -1,0 +1,17 @@
+Algoritmo Palindromo
+    Leer x
+    original ← x
+    inv ← 0
+
+    Mientras x > 0 Hacer
+        r ← x MOD 10
+        x ← x DIV 10
+        inv ← (inv * 10) + r
+    FinMientras
+
+    Si original = inv Entonces
+        Escribir "Es palindromo"
+    SiNo
+        Escribir "No es palindromo"
+    FinSi
+FinAlgoritmo
